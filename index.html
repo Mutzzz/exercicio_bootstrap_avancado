@@ -12,7 +12,7 @@
         <div class="navbar navbar-expand-lg">
             <div class="container">
                 <h1>Travel the World</h1>
-                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="menu">
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <nav class="collapse navbar-collapse justify-content-end" id="menu">
@@ -33,43 +33,45 @@
                 </nav>
             </div>
         </div>
+    </header>
         <div class="container">
-            <div id="#carousel-header" class="carousel slide" data-bs-ride="carousel">
+            <div id="carousel-span-button" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div data-bs-interval="3000" class="carousel-item active">
                         <img class="w-100 d-block" src="./locais/sanfrancisco-horizontal.jpg">
                     </div>
-                    <div data-bs-interval="3000" class="carousel-item">
+                    <div class="carousel-item">
                         <img class="w-100 d-block" src="./locais/pexels-christyn-reyes-14435169.jpg">
                     </div>
-                    <div data-bs-interval="3000" class="carousel-item">
+                    <div class="carousel-item">
                         <img class="w-100 d-block" src="./locais/pexels-dorde-drazic-17789378.jpg">
                     </div>
-                    <div data-bs-interval="3000" class="carousel-item">
+                    <div class="carousel-item">
                         <img class="w-100 d-block" src="./locais/pexels-felix-mittermeier-532580.jpg">
                     </div>
-                    <div data-bs-interval="3000" class="carousel-item">
+                    <div class="carousel-item">
                         <img class="w-100 d-block" src="./locais/pexels-luca-barth-17877694.jpg">
                     </div>
-                    <div data-bs-interval="3000" class="carousel-item">
+                    <div class="carousel-item">
                         <img class="w-100 d-block" src="./locais/pexels-thịnh-la-17327394.jpg">
                     </div>
                 </div>
-                <button type="button" class="carousel-control-prev" data-bs-target="#carousel-header" data-bs-slide="prev">
+                <button type="button" class="carousel-control-prev" data-bs-target="#carousel-span-button" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon"></span>
                 </button>
-                <button type="button" class="carousel-control-next" data-bs-target="#carousel-header" data-bs-slide="next">
+                <button type="button" class="carousel-control-next" data-bs-target="#carousel-span-button" data-bs-slide="next">
                     <span class="carousel-control-next-icon"></span>
                 </button>
                 <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carousel-header" class="active" data-bs-slide-to="0">
-                    <button type="button" data-bs-target="#carousel-header" data-bs-slide-to="1">    
-                    <button type="button" data-bs-target="#carousel-header" data-bs-slide-to="2">
-                    </button>
+                    <button type="button" data-bs-target="#carousel-span-button" class="active" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#carousel-span-button" data-bs-slide-to="1"></button>  
+                    <button type="button" data-bs-target="#carousel-span-button" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#carousel-span-button" data-bs-slide-to="3"></button>
+                    <button type="button" data-bs-target="#carousel-span-button" data-bs-slide-to="4"></button>
+                    <button type="button" data-bs-target="#carousel-span-button" data-bs-slide-to="5"></button>
                 </div>
             </div>
         </div>
-    </header>
     <section id="inicio">
         <div class="container">
             <h2>Início</h2>
@@ -105,26 +107,58 @@
             </div>
         </div>
     </section>
-    <section id="mais-visitados">
+    <section id="promocoes">
         <div class="container">
-            <h2>Mais visitados</h2>
+            <h2>Promoções</h2>
             <div class="grid-visitadas">
                 <div class="cidades-visitadas">
                     <div class="card text-bg-dark">
                         <img src="./locais/france.jpeg" alt="França">
                         <div class="card-img-overlay">
-                            <h4 class="card-title">Título do Card</h4>
+                            <h4 class="card-title">Torre Eiffel</h4>
                             <p class="card-text">A Torre Eiffel é uma torre treliçada de ferro forjado no Champ de Mars, em Paris, França. Construída a partir de 1887, recebeu o nome do engenheiro Gustave Eiffel, cuja empresa projetou e construiu a torre.</p>
                         </div>
+                        <footer class="card-footer">
+                            <strike>2.400,00 R$</strike>
+                            1.300,00R$
+                            <button type="button" class="btn btn-primary">Viajar agora</button>
+                        </footer>
                     </div>
                     <div class="card text-bg-dark">
                         <img src="./locais/buda.jpeg" alt="Buda">
+                        <div class="card-img-overlay">
+                            <h4 class="card-title">Buda</h4>
+                            <p class="card-text">Estátua do grande Buda na índia</p>
+                        </div>
+                        <footer class="card-footer">
+                            <strike>2.400,00 R$</strike>
+                            1.300,00R$
+                            <button type="button" class="btn btn-primary">Viajar agora</button>
+                        </footer>
                     </div>
                     <div class="card text-bg-dark">
                         <img src="./locais/egito.jpeg" alt="Egito">
+                        <div class="card-img-overlay">
+                            <h4 class="card-title">Pirâmides</h4>
+                            <p class="card-text">As pirâmides do Egito são estruturas faraônicas e suntuosas construídas na antiguidade para abrigar o corpo e os bens dos faraós. As pirâmides serviam também para demonstrar o poder que os faraós tinham sobre o Egito, uma vez que eram os próprios representantes dos deuses na terra.</p>
+                        </div>
+                        <footer class="card-footer">
+                            <strike>2.400,00 R$</strike>
+                            1.300,00R$
+                            <button type="button" class="btn btn-primary">Viajar agora</button>
+                        </footer>
                     </div>
                     <div class="card text-bg-dark">
                         <img src="./locais/london.jpeg" alt="Londres">
+                        <div class="card-img-overlay">
+                            <h4 class="card-title">Big Ben</h4>
+                            <p class="card-text">A construção do Big Ben iniciou-se depois do incêndio que destruiu quase todo o Palácio de Westminster, em 1834. A ideia era ocupar o lugar que resistiu às chamas com algo novo, então uma torre com relógio para marcar as horas oficiais de Londres surgiu como opção.</p>
+                        </div>
+                        <footer class="card-footer">
+                            <strike>2.400,00 R$</strike>
+                            1.300,00R$
+                            <button type="button" class="btn btn-primary">Viajar agora</button>
+                        </footer>
                     </div>
                 </div>    
             </div>
