@@ -9,11 +9,35 @@
 </head>
 <body>
     <header>
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+                <h1>Travel the World</h1>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="nav navbar-nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#inicio">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#promocoes">Promoções</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#mais-visitados">+ Visitados</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contato">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
         <div class="container">
             <div id="#carousel-header" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div data-bs-interval="3000" class="carousel-item active">
-                        <img class="w-100 d-block" src="./locais/pexels-airam-datoon-15888996.jpg">
+                        <img class="w-100 d-block" src="./locais/sanfrancisco-horizontal.jpg">
                     </div>
                     <div data-bs-interval="3000" class="carousel-item">
                         <img class="w-100 d-block" src="./locais/pexels-christyn-reyes-14435169.jpg">
@@ -46,5 +70,65 @@
             </div>
         </div>
     </header>
+    <section id="inicio">
+        <div class="container">
+            <h2>Início</h2>
+            <div class="grid-inicio">
+                <div class="cidades-inicio">
+                    <img src="./locais/pexels-photo-3757144.jpeg" alt="Madrid">
+                    <div class="descricao">
+                        <h6>Madrid</h6>
+                        <p>Madri, a capital da Espanha, situada no centro do país, é uma cidade de avenidas elegantes e parques grandes e bem cuidados, como o Buen Retiro.</p>
+                    </div>
+                </div>
+                <div class="cidades-inicio">
+                    <img src="./locais/pexels-photo-2190283.jpeg" alt="Nova York">
+                    <div class="descricao">
+                        <h6>Nova York</h6>
+                        <p>No centro da cidade fica Manhattan, um distrito com alta densidade demográfica que está entre os principais centros comerciais, financeiros e culturais do mundo.</p>
+                    </div>
+                </div>
+                <div class="cidades-inicio">
+                    <img src="./locais/pexels-photo-208745.jpeg" alt="São francisco">
+                    <div class="descricao">
+                        <h6>São Francisco</h6>
+                        <p>conhecida pela névoa que dura o ano todo, pela emblemática Ponte Golden Gate, por seus bondinhos e por suas coloridas casas vitorianas.</p>
+                    </div>
+                </div>
+                <div class="cidades-inicio">
+                    <img class="londres" src="./locais/pexels-photo-672532.jpeg" alt="Londres">
+                    <div class="descricao">
+                        <h6>Londres</h6>
+                        <p>Seu centro abriga as sedes imponentes do Parlamento, a famosa torre do relógio do Big Ben e a Abadia de Westminster, local de coroação dos monarcas britânicos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="mais-visitados">
+        <div class="container">
+            <h2>Mais visitados</h2>
+            <div class="grid-visitadas">
+                <div class="cidades-visitadas">
+                    <div class="card text-bg-dark">
+                        <img src="./locais/france.jpeg" alt="França">
+                        <div class="card-img-overlay">
+                            <h4 class="card-title">Título do Card</h4>
+                            <p class="card-text">A Torre Eiffel é uma torre treliçada de ferro forjado no Champ de Mars, em Paris, França. Construída a partir de 1887, recebeu o nome do engenheiro Gustave Eiffel, cuja empresa projetou e construiu a torre.</p>
+                        </div>
+                    </div>
+                    <div class="card text-bg-dark">
+                        <img src="./locais/buda.jpeg" alt="Buda">
+                    </div>
+                    <div class="card text-bg-dark">
+                        <img src="./locais/egito.jpeg" alt="Egito">
+                    </div>
+                    <div class="card text-bg-dark">
+                        <img src="./locais/london.jpeg" alt="Londres">
+                    </div>
+                </div>    
+            </div>
+        </div>
+    </section>
     <script src="lib/cdn.jsdelivr.net_npm_bootstrap@5.3.1_dist_js_bootstrap.bundle.min.js"></script>
 </body>
