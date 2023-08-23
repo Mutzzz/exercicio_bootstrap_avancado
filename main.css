@@ -32,7 +32,7 @@
 
 .grid-inicio {
     display: grid;
-    grid-template-columns: repeat(2, 49%);
+    grid-template-columns: repeat(2, 52.7%);
     clear: both;
 }
 
@@ -53,7 +53,7 @@
 
 .cidades-visitadas {
     display: grid;
-    grid-template-columns: repeat(2, 49%);
+    grid-template-columns: repeat(2, 51.4%);
     clear: both;
 }
 
