@@ -13,11 +13,24 @@
 header {
     position: sticky;
     top: 0;
+    left: 0;
+    z-index: 1;
     background-color: #fff;
 }
 
-.carousel-item img {
-    height: 50vh;
+.card .carousel-item img {
+    height: 60vh;
+}
+
+.card .carousel-item .card-title {
+    display: flex;
+    justify-content: center;
+    padding-top: 10vh;
+}
+
+.card .carousel-item .card-text {
+    display: flex;
+    justify-content: center;
 }
 
 .navbar-nav .nav-link.active {
@@ -26,11 +39,12 @@ header {
 }
 
 .navbar-nav .nav-link {
-    padding: 5px;
+    padding: 10px;
     margin: 1vh;
     font-weight: bold;
     color: #000000;
 }
+
 
 #inicio {
     padding-top: 3%;
@@ -38,12 +52,13 @@ header {
 
 .grid-inicio {
     display: grid;
-    grid-template-columns: repeat(2, 52.7%);
+    grid-template-columns: repeat(3, 34.5%);
     clear: both;
 }
 
-#promocoes {
+#promocoes h2 {
         padding-top: 3%;
+        padding-bottom: 3%;
 }
 
 .cidades-inicio img {
@@ -63,9 +78,10 @@ header {
 
 .cidades-visitadas {
     display: grid;
-    grid-template-columns: repeat(2, 51.4%);
+    grid-template-columns: repeat(2, 49%);
     clear: both;
-    padding-top: 5vh;
+    column-gap: 2vh;
+    row-gap: 2vh;
 }
 
 .card img {
@@ -74,7 +90,7 @@ header {
 }
 
 .card {
-    width: 95%;
+    width: 100%;
     height: 100%;
 }
 
@@ -89,8 +105,113 @@ header {
 }
 
 .card-footer button {
-    margin-left: 18vh;
+    margin-left: 39%;
 }
+
+#mais-visitados h2 {
+    padding-top: 5vh;
+}
+
+form {
+    width: 50%;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+ul li img {
+    width: 4%;
+    margin-right: 2%;
+    margin-top: 2%;
+}
+
+@media screen and (min-width: 768px) and (max-width:1023px ) {
+    .card .carousel-item img {
+        height: 40vh;
+    }
+
+    .grid-inicio {
+        display: grid;
+        grid-template-columns: repeat(2, 52.5%);
+        clear: both;
+    }
+
+    .cidades-visitadas {
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+        clear: both;
+        column-gap: 2vh;
+        row-gap: 2vh;
+    }
+
+    .card img {
+        width: 100%;
+        height: 130vh;
+    }
+
+    .card-footer strike {
+        font-size: 3vh;
+    }
+
+    .card-footer p {
+        font-size: 3vh;
+    }
+
+    .card-footer button {
+        padding: 20px;
+        margin-left: 0%;
+    }
+
+    .card-title {
+        font-size: 50px;
+    }
+
+    .card-text {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .grid-inicio {
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+        clear: both;
+    }
+
+    .cidades-inicio img {
+        width: 100%;
+    }
+
+    .descricao p {
+        width: 100%;
+    }
+
+    .cidades-visitadas {
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+        clear: both;
+        column-gap: 2vh;
+        row-gap: 2vh;
+    }
+
+    .card-footer button {
+        margin-left: 0%;
+    }
+    
+    ul li img {
+        width: 10%;
+    }
+
+    form {
+        width: 80%;
+    }
+}
+
+
 
 
 
